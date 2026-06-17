@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.btn {
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    font-size: 15px;
+    color: white;
+    scale: 1.2;
+    opacity: 0.7;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    filter: grayscale(0);
+    transition: filter 0.5s ease;
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+.btn:hover {
+    cursor: pointer;
+    filter: blur(0);
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+}
+
+img:hover {
+    filter: grayscale(1);
+}
